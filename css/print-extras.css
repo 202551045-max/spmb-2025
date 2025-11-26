@@ -1,0 +1,68 @@
+/* Tambahan CSS untuk watermark */
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120px;
+    color: rgba(102, 126, 234, 0.05);
+    font-weight: bold;
+    z-index: -1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Barcode Style */
+.barcode {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.barcode-lines {
+    display: inline-block;
+    background: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 2px,
+        #fff 2px,
+        #fff 4px
+    );
+    height: 60px;
+    width: 200px;
+}
+
+.barcode-text {
+    margin-top: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Security Features */
+.security-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        #667eea 0px,
+        #667eea 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    bottom: 50mm;
+    left: 0;
+    opacity: 0.3;
+}
+
+/* Hologram effect */
+.hologram {
+    position: absolute;
+    top: 30mm;
+    right: 20mm;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb);
+    border-radius: 50%;
+    opacity: 0.2;
+}
